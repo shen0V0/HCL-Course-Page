@@ -26,17 +26,87 @@
         <p>Human-Computer Interaction (HCI) is an interdisciplinary field that explores the relationship between people and technology, focusing on how humans interact with computers, devices, and software. It aims to design intuitive, efficient, and enjoyable systems that enhance usability, accessibility, and user experience while addressing users' needs, behaviors, and preferences. HCI combines principles from computer science, psychology, design, and ergonomics to create technologies that are not only functional but also user-friendly and inclusive.</p>
         
           
-<h2>My Goal:</h2>
-<p>I'm expecting to learn how to design, evaluate, and improve user-centered systems that enhance usability, accessibility, and user experience.
-</p>
+    <h2>My Goal:</h2>
+    <p>I'm expecting to learn how to design, evaluate, and improve user-centered systems that enhance usability, accessibility, and user experience.
+    </p>
     </div>
-
+    <div id="summary">
+  <div class="tab">
+        <button class="close-button" onclick="summary()">Close</button>
+        <br><br>
+        <div class="summary-nav">
+            <p>Summary</p>
+            <a href="#summary_1" >1</a>
+            <a href="#summary_2" >2</a>
+            <a href="#summary_3" >3</a>
+            <a href="#summary_4" >4</a>
+            <a href="#summary_5" >5</a>
+            <a href="#summary_6" >6</a>
+            <a href="#summary_7" >7</a>
+            <a href="#summary_10" >10</a>
+            <a href="#summary_11" >11</a>
+        </div>
+    </div>
+        <div id="summary_1">
+        <h2>Week 1 Reading Summary</h2>
+        <h3>Due date: 1/31/25</h3>
+        <p>The concept of Human-Computer Interaction (HCI) emerged in the 1980s as computers became more accessible. Early systems required users to input commands via keyboards, but Sketchpad introduced direct manipulation without typing. Other input devices like joysticks and knee-controlled levers existed, but the mouse became the preferred choice for its ease and comfort. The Xerox Star introduced the first graphical user interface (GUI) with windows, icons, menus, and a pointing device, supporting WYSIWYG interaction. 1983 is considered the birth of HCI, marked by the first ACM SIGCHI conference, the publication of The Psychology of Human-Computer Interaction, and the Apple Macintosh launch.</p>        
+        </div>
+        <div id="summary_2">
+            <h2>Week 2 Reading Summary</h2>
+            <h3>Due date: 2/7/25</h3>
+            <p><span>Not Submitted</span></p>        
+        </div>
+    
+        <div id="summary_3">
+            <h2>Week 3 Reading Summary</h2>
+            <h3>Due date: 2/14/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+        <div id="summary_4">
+            <h2>Week 4 Reading Summary</h2>
+            <h3>Due date: 2/21/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+        <div id="summary_5">
+            <h2>Week 5 Reading Summary</h2>
+            <h3>Due date: 2/28/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+        <div id="summary_6">
+            <h2>Week 6 Reading Summary</h2>
+            <h3>Due date: 3/7/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+        <div id="summary_7">
+            <h2>Week 7 Reading Summary</h2>
+            <h3>Due date: 3/14/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+        <div id="summary_10">
+            <h2>Week 10 Reading Summary</h2>
+            <h3>Due date: 4/11/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+        <div id="summary_11">
+            <h2>Week 11 Reading Summary</h2>
+            <h3>Due date: 4/18/25</h3>
+            <p><span>Not Submitted</span></p>          
+        </div>
+    </div>
     <script>
         function togglePopup() {
             const popup = document.getElementById('hclPopup');
             const overlay = document.getElementById('overlay');
             const isVisible = popup.style.display === 'block';
             
+            popup.style.display = isVisible ? 'none' : 'block';
+            overlay.style.display = isVisible ? 'none' : 'block';
+        }
+        function summary(){
+            const popup = document.getElementById("summary");
+            const overlay = document.getElementById('overlay');
+            const isVisible = popup.style.display === 'block';
             popup.style.display = isVisible ? 'none' : 'block';
             overlay.style.display = isVisible ? 'none' : 'block';
         }
@@ -131,25 +201,11 @@
     <td colspan=3>Reading Assignment Summaries</td>
     </tr>
     <tr>
-    <td>Reading Summary week 1</td>
-    <td>1/31/25</td>
-    <td><span>Not Submitted</span></td>
+    <td>Reading Summaries</td>
+    <td>friday</td>
+    <td><a onclick="summary()">Summaries</a></td>
     </tr>
-    <tr>
-        <td>Reading Summary week 2</td>
-        <td>2/7/25</td>
-        <td><span>Not Submitted</span></td>
-        </tr>
-      <tr>
-    <td>Reading Summary week 3</td>
-    <td>2/14/25</td>
-    <td><span>Not Submitted</span></td>
-    </tr>
-    <tr>
-        <td>Reading Summary week 4</td>
-        <td>2/21/25</td>
-        <td><span>Not Submitted</span></td>
-    </tr>
+   
 </table>
 
 </div>

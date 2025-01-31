@@ -100,6 +100,7 @@
     a{
         color: #0000FF;
         text-decoration: none;
+        cursor: pointer;
     }
     a:hover {
         color:#0099CC;
@@ -115,6 +116,7 @@
         width: 80%;
         margin: 0 auto;
         text-align: center;
+        border: 1px solid #a79286;
     }
     caption{
     font-size:28px;
@@ -196,7 +198,7 @@
     text-align:center;
     margin-bottom:5px;
     }
-    #hclPopup {
+    #hclPopup, #summary{
         display: none; /* Hidden by default */
         position: fixed;
         top: 50%;
@@ -228,3 +230,52 @@
         cursor: pointer;
         float: right;
     }
+    #summary {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 70vh; /* Makes it scrollable if content overflows */
+        background: white;
+        border: 1px solid black;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        padding-top:0px;
+        overflow-y: auto; /* Enables scrolling */
+    }
+  #summary .tab{
+    padding-top: 15px;
+    display: flex;
+    position: sticky;
+    width: auto;
+    top:0px;
+    background-color: white;
+  }
+    #summary .close-button {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        background: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    .summary-nav {
+        width: 50vh;
+        display: flex;
+        gap: 2px;
+        margin-bottom: 10px;
+
+    }
+    
+    .summary-nav a {
+        margin: auto;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
