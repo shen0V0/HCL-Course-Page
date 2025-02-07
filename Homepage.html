@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +11,20 @@
 <body>
 <a id="home"></a>
 <div class="Head"><!--<span>Top</span> part of the page, suggest to add button as link-->
-<A class="button" href="#home">Home</A>
-<A class="button" href="https://www.linkedin.com/in/yikai-liu-5508aa189/" target="blank">Linkedin</A>
-<A class="button" href="http://www.cs.gsu.edu/" target="blank">GSU CS</A>
-<A class="button" href="./My_CSS.css"  target="blank">CSS</A>
+<a class="button" href="#home">Home</a>
+<a class="button" href="https://www.linkedin.com/in/yikai-liu-5508aa189/" target="blank">Linkedin</a>
+<a class="button" href="http://www.cs.gsu.edu/" target="blank">GSU CS</a>
+<a class="button" href="./My_CSS.css"  target="blank">CSS</a>
 <button class="button" onclick="togglePopup()">HCL</button>
 </div>
 <div class="container">
-    <div id="overlay" onclick="togglePopup()"></div>
-
+    <div id="overlay"></div>
+    <div class="pdf" id="pdf1">
+        <a class="button-x" href="./pdf1.pdf" target="blank">On new tab</a>
+        <button class="close-button" onclick="PDF('pdf1')">Close</button>
+        <br>
+    <iframe  src="pdf1.pdf" margin-top="20px" width="900" height="600"></iframe>
+    </div>
     <!-- Popup Container -->
     <div id="hclPopup">
         <button class="close-button" onclick="togglePopup()">Close</button>
@@ -51,13 +57,13 @@
             <br><br><br><br>
         <h2>Week 1 Reading Summary</h2>
         <h3>Due date: 1/31/25</h3>
-        <p>The concept of Human-Computer Interaction (HCI) emerged in the 1980s as computers became more accessible. Early systems required users to input commands via keyboards, but Sketchpad introduced direct manipulation without typing. Other input devices like joysticks and knee-controlled levers existed, but the mouse became the preferred choice for its ease and comfort. The Xerox Star introduced the first graphical user interface (GUI) with windows, icons, menus, and a pointing device, supporting WYSIWYG interaction. 1983 is considered the birth of HCI, marked by the first ACM SIGCHI conference, the publication of The Psychology of Human-Computer Interaction, and the Apple Macintosh launch.</p>        
+        <p>The concept of Human-Computer Interaction (HCI) emerged in the 1980s as computers became more accessible. Early systems required users to input commands via keyboards, but Sketchpad introduced direct manipulation without typing. Other input devices like joysticks and knee-controlled levers existed, but the mouse became the preferred choice for its ease and comfort. The Xerox Star introduced the first graphical user interface (GUI) with windows, icons, menus, and a pointing device, supporting WYSIWYG interaction. 1983 is considered the birth of HCI, marked by the first ACM SIGCHI conference, the publication of The Psychology of Human-Computer Interaction, and the apple Macintosh launch.</p>        
         </div>
         <div id="summary_2">
             <br><br><br><br>
             <h2>Week 2 Reading Summary</h2>
             <h3>Due date: 2/7/25</h3>
-            <p><span>Not Submitted</span></p>        
+            <p>HCI faces challenges due to human differences, so it focuses on specific audiences. Vision is the most critical sense, followed by hearing and touch, while smell and taste are rarely used. Humans interact with computers mainly through limbs, speech, and eye tracking. The brain processes information between sensors and responders through perception, cognition, memory, and language. Performance involves a speed-accuracy trade-off, reaction time, and visual search, which improve with practice. Humans multitask and make errors, requiring HCI to address attention and accuracy. Minimizing redundancy in text enhances efficiency. Understanding human perception and behavior helps design better interfaces.</p>        
         </div>
     
         <div id="summary_3">
@@ -119,6 +125,13 @@
             popup.style.display = isVisible ? 'none' : 'block';
             overlay.style.display = isVisible ? 'none' : 'block';
         }
+        function PDF(filename){
+            const popup = document.getElementById(filename);
+            const overlay = document.getElementById('overlay');
+            const isVisible = popup.style.display === 'block';
+            popup.style.display = isVisible ? 'none' : 'block';
+            overlay.style.display = isVisible ? 'none' : 'block';
+        }
     </script>
 <div class="left_box">
 <div class="text">
@@ -148,14 +161,14 @@
 </div>
 <div class="center_box">
 <table>
-<caption>Assignment</caption>
+<caption>assignment</caption>
 <tr>
-<th>Assignment</th>
+<th>assignment</th>
 <th>Due Date</th>
 <th>Link</th>
 </tr>
 <tr class="tr_special">
-<td colspan=3>Individual Assignment</td>
+<td colspan=3>Individual assignment</td>
 </tr>
 <tr class="tr_special">
 </tr>
@@ -168,7 +181,7 @@
 <tr>
 <td>User & Problem Research Paper</td>
 <td>2/7/25</td>
-<td><span>Not Submitted</span></td>
+<td><a onclick="PDF('pdf1')">Research Paper</a></td>
 </tr>
 <tr>
 <td>Team Skit & User Scenario</td>
@@ -207,7 +220,7 @@
 <td><span>Not Submitted</span></td>
 </tr>
 <tr class="tr_special">
-    <td colspan=3>Reading Assignment Summaries</td>
+    <td colspan=3>Reading assignment Summaries</td>
     </tr>
     <tr>
     <td>Reading Summaries</td>
@@ -231,7 +244,7 @@
 <li>Dark Soul 3</li>
 <li>BloodBorne</li>
 <li> Terraria</li>
-<li>Assassin's Creed: Odyssey</li>
+<li>assassin's Creed: Odyssey</li>
 <li>Nioh 2</li>
 <li>BorderLands 3</li>
 <li>God Of War: Ragnarök</li>

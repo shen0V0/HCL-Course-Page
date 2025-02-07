@@ -198,7 +198,7 @@
     text-align:center;
     margin-bottom:5px;
     }
-    #hclPopup, #summary{
+    #hclPopup, #summary, .pdf{
         display: none; /* Hidden by default */
         position: fixed;
         top: 50%;
@@ -278,4 +278,27 @@
         cursor: pointer;
         font-size: 16px;
     }
-    
+    iframe {
+        margin-top: 0px;
+        width: 900px;
+        height: 600px;
+        border: none;
+    }
+    .button-x{
+        align-items: center;
+        margin-left: 40%; 
+        margin-bottom: 5px;
+        background-color: #f4f0ed;
+        color:black;
+        padding: 5px;
+        border: 1px lightgray solid;
+        border-radius: 3px;
+    }
+    .button-x:hover{
+        color:Blue;
+        text-decoration:underline;
+        background-color:rgba(238, 178, 178, 0.3);
+    }
+    .pdf .close-button{
+        margin-bottom: 5px;
+    }
